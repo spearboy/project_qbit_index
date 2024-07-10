@@ -1,18 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './assets/scss/main.scss';
-import Sidemenu from './components/Sidemenu';
-import ViewPage from './components/ViewPage';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Main from './page/Main';
+import OrderView from './components/OrderView';
 
 const App = () => {
-  const [currentUrl, setCurrentUrl] = useState('');
 
   return (
     <BrowserRouter>
-      <div className='work_space open'>
-        <Sidemenu setCurrentUrl={setCurrentUrl} />
-        <ViewPage currentUrl={currentUrl} />
-      </div>
+      <Routes>
+        <Route path='/' element={<Main/>}/>
+        <Route path='/order' element={<OrderView/>}/>
+      </Routes>
     </BrowserRouter>
   );
 };

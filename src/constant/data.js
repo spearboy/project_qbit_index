@@ -89,7 +89,7 @@ export const menuServer = [
     },
     {
         title: "메뉴판&포스 데이터 연결",
-        url: "http://qbitorder.com/main",
+        url: "-",
         status: "미진행",
     },
     {
@@ -114,10 +114,5 @@ export const teamTools = [
         title: "크리에이티 디자인 산출물",
         url: "https://creatie.ai/goto/BAA8Llnj?file=131399536796514",
         status: "진행중",
-    },
-    {
-        title: "웹 소캣 설정",
-        url: "https://raw.githubusercontent.com/spearboy/project_qbit/main/server.js",
-        status: "수정중",
     }
 ]
