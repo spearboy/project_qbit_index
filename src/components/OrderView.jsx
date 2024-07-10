@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const OrderView = () => {
   return (
     <div className='order_wrapper'>
-        <Link className='back_btn' to={'/'}>&lt;</Link>
+        <Link className='back_btn' to={'/'}>프레임 페이지</Link>
     <div className="title_wrapper">
         <h1>프로젝트 큐빗 | Qbit</h1>
         <div className="title_inner">
@@ -20,6 +20,7 @@ const OrderView = () => {
             <p>Next.js Node.js Scss</p>
         </div>
         <div className="title_inner_col">
+            <div className='qr_sample'></div>
             <p className="desc_title">프로젝트 진행률</p>
             <div className="progress">
                 <div></div>
@@ -62,9 +63,9 @@ const OrderView = () => {
         <div className="cate_wrapper">
             <h2>서버 사이드</h2>
             <ul>
-                <li><Link href="https://raw.githubusercontent.com/spearboy/project_qbit/main/server.js" target="_blank">서버 동작 페이지</Link></li>
+                <li><Link to="https://raw.githubusercontent.com/spearboy/project_qbit/main/server.js" target="_blank">서버 동작 페이지</Link></li>
                 <li><Link className="not-yet" href="#" target="_blank">메뉴판&포스 데이터 연결</Link></li>
-                <li><Link href="https://raw.githubusercontent.com/spearboy/project_qbit/main/server.js" target="_blank">웹 소캣 설정</Link></li>
+                <li><Link to="https://raw.githubusercontent.com/spearboy/project_qbit/main/server.js" target="_blank">웹 소캣 설정</Link></li>
             </ul>
         </div>
         <div className="cate_wrapper">
